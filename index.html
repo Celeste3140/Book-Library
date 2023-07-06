@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/styles.css">
+    <link rel="icon" type="image/x-icon" href="assets/images/icons8-book-64.png">
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata&family=Karla&display=swap" rel="stylesheet">
+    <title>My Books</title>
+</head>
+<body>
+    <header>
+      <h1>Your Book Archive</h1>
+      <p id="subHeading">Add books you have read, want to read or in the process of reading! All is saved to
+        your local storage!
+      </p>
+    </header>
+    <main>
+      <button class="new">Add a book</button>
+      <div class="table">
+        <table>
+          <thead>
+            <tr>
+              <th>Title</th>
+              <th>Author</th>
+              <th>Read</th>
+              <th></th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody>
+            <td>TitleData</td>
+            <td>AuthorData</td>
+            <td>ReadData</td>
+            <td><button>Status</button></td>
+            <td><button>Edit</button></td>
+            <td><button>Delete</button></td>
+          </tbody>
+        </table>
+      </div> 
+      <div class="form hidden">
+        <h2>Add or Edit</h2>
+        <input type="text" id="title" placeholder="Title">
+        <input type="text" id="author" placeholder="Author">
+        <fieldset role="radiogroup">
+          <legend>Read book?</legend>
+          <label for="yes">
+            <input type="radio" id="yes" name="read" value="yes" checked>
+            <span>Yes</span>
+          </label>
+          <label for="no">
+            <input type="radio" id="no" name="read" value="no">
+            <span>No</span>
+          </label>
+        </fieldset>
+        <div class="button-group">
+          <button id="submit">Submit</button>
+          <button id="return">Return</button>
+       </div>
+      </div>
+    </main>
+    <script src="assets/script.js"></script>
+  </body>
+</html>
